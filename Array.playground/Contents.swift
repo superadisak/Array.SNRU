@@ -28,7 +28,22 @@ strArrayName2.append("Doremon")
 //การหาขนาดของ Array
 strArrayName2.count
 
-print("strArray2 ที่ index = 3")
+//นี่คือการเรียกใช้ค่าจาd Array โดยใช่ index 
+print("strArray2 ที่ index = 3 มีค่า \
+      (strArrayName2[3])")
+
+//การลบสมาชิก ของ Array
+strArrayName2
+strArrayName2.remove(at: 1)
+print(strArrayName2)
+
+//การเรียง สมาชิก Array
+var intA = [9,5,7,1,3,10]
+intA.sort()
+print(intA)
+
+
+
 
 
 
