@@ -25,6 +25,11 @@ intArrayNumber2.append(111)
 
 strArrayName2.append("Doremon")
 
+//การหาขนาดของ Array
+strArrayName2.count
+
+print("strArray2 ที่ index = 3")
+
 
 
 
