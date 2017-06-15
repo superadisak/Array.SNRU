@@ -88,12 +88,55 @@
                     <view key="view" contentMode="scaleToFill" id="kGB-v9-igK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uwt-EC-UYd">
+                                <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Second Screen" id="2kT-uJ-86Q">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="9Rt-05-93h">
+                                            <connections>
+                                                <action selector="secondBackButton:" destination="J1F-m7-xdV" id="Id6-y2-Mfp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="65n-Tc-asj">
+                                            <connections>
+                                                <action selector="nextbutton:" destination="J1F-m7-xdV" id="YDe-Ri-Mrc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I2-TU-DdK">
+                                <rect key="frame" x="63" y="129" width="248" height="408"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="LGA-Wl-Wem"/>
+                                    <constraint firstAttribute="height" constant="408" id="OvB-Up-UkB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="71"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA6-vt-j5e">
+                                <rect key="frame" x="0.0" y="629" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1I2-TU-DdK" firstAttribute="top" secondItem="uwt-EC-UYd" secondAttribute="bottom" constant="63" id="SzL-tr-Zdd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ShowLabel" destination="1I2-TU-DdK" id="Sek-XI-bei"/>
+                        <outlet property="numberlabel" destination="1I2-TU-DdK" id="LN5-5l-lFh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqU-wv-u72" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="38"/>
+            <point key="canvasLocation" x="484.5" y="37.5"/>
         </scene>
     </scenes>
     <resources>

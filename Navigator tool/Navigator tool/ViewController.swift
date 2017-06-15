@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     
 
     
+    
+    
+    
+    
     @IBAction func increaseNumber(_ sender: Any) {
     showMessage(strMessage: "Click increaseNumber")
         intNumber += 1
